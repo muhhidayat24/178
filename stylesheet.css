@@ -1,0 +1,90 @@
+
+*,
+*::after,
+*::before {
+
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    box-sizing: border-box;
+    transition: .2s;
+    border: none;
+
+}
+
+.page_title {
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: left;
+    padding: .5em;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+}
+
+.calculator {
+    width: 550px;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    background-color: lightgray;
+    border-radius: 12px;
+    justify-content: space-evenly;
+}
+
+.calculator-screen {
+    display: block;
+    width: 480px;
+    border-radius: 12px;
+    height: 90px;
+    background-color: black;
+    margin: 5px auto;
+    color: white;
+    text-align: right;
+    padding: 20px;
+}
+
+.calculator-keys{
+    width: 480px;
+  align-items: center;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+}
+
+button{
+    height: 80px;
+    background-color: black;
+    border: 1px solid gray;
+    font-size: 32px;
+    color:aliceblue;
+    width: 25%;
+    outline: none;
+  border-radius: 12px;
+  margin : 5px;
+
+}
+.all-clear, .zero-btn{
+    width: 50%;
+}
+
+.operator, .equal-sign, .percentage, .all-clear, .decimal{
+    background-color: blue;
+}
+
+button:hover {
+  cursor: pointer;
+    background-color: darkgray;
+}
+
+.operator:hover, .equal-sign:hover, .percentage:hover, .all-clear:hover, .decimal:hover {
+    background-color: darkblue;
+}
